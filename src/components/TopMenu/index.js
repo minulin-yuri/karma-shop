@@ -1,0 +1,45 @@
+import Link from '@mui/material/Link';
+import './style.scss';
+import '../../assets/style/themify-icons.css';
+
+const links = [
+    {
+        path: '/',
+        component: '<Home />',
+        title: 'Home',
+    },
+    {
+        path: '/category',
+        component: '<Category />',
+        title: 'Category',
+    },
+    {
+        path: '/contacts',
+        component: '<Contacts />',
+        title: 'Contacts',
+    }
+];
+
+
+export default function TopMenu() {
+    return (
+        <div className="topMenu">
+            {links.map(item => (
+                <div
+                    key={item.title}
+                    className="topMenu__item"
+                >
+                    <Link href={item.path} underline="none">
+                        {item.title}
+                    </Link>
+                </div>
+            ))}
+            <div className="topMenu__item">
+                <span className="ti-bag"></span>
+            </div>
+            <div className="topMenu__item">
+                <span className="ti-search"></span>
+            </div>
+        </div>
+    )
+}

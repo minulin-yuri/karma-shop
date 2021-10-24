@@ -1,10 +1,13 @@
-import BannerBig from './components/Banner/BannerBig'
 import './App.scss';
+import MainRouter from './components/Router';
+import Navigation from './components/Navigation';
+
 
 function App() {
   return (
     <div className="App">
-      <BannerBig />
+      <Navigation />
+      <MainRouter />
     </div>
   );
 }

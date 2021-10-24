@@ -6,6 +6,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #777777;
+    position: relative;
 }
 
 .container {
@@ -18,5 +19,11 @@ h1 {
     font-weight: 700;
     font-family: "Poppins", sans-serif;
     color: #222222;
+    line-height: 1.2;
+}
+
+h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 21px;
     line-height: 1.2;
 }
