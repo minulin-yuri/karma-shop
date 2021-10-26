@@ -1,24 +1,7 @@
 import Link from '@mui/material/Link';
 import './style.scss';
 import '../../assets/style/themify-icons.css';
-
-const links = [
-    {
-        path: '/',
-        component: '<Home />',
-        title: 'Home',
-    },
-    {
-        path: '/category',
-        component: '<Category />',
-        title: 'Category',
-    },
-    {
-        path: '/contacts',
-        component: '<Contacts />',
-        title: 'Contacts',
-    }
-];
+import links from './links';
 
 
 export default function TopMenu() {
@@ -39,6 +22,9 @@ export default function TopMenu() {
             </div>
             <div className="topMenu__item">
                 <span className="ti-search"></span>
+            </div>
+            <div className="topMenu__item">
+                <span className="ti-user"></span>
             </div>
         </div>
     )
